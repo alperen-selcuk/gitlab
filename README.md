@@ -35,12 +35,14 @@ you can run gitlab runner on linux, docker or kubernetes
 
 #### linux
 
+```
 gitlab-runner register \
   --non-interactive \
   --url "https://gitlab.com/" \
   --token "$RUNNER_TOKEN" \
   --executor "docker" \
   --docker-image alpine:latest
+```
 
 #### docker
 
